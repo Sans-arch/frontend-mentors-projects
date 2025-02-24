@@ -1,0 +1,85 @@
+:root {
+  --blue: #4c5fd5;
+  --light-blue: #dadbf1;
+  --black: #000000;
+  --light-dark: #191a1b;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 1.1rem 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container img {
+  width: 120px;
+}
+
+.logo-container span {
+  font-size: 1.45rem;
+  font-weight: 300;
+}
+
+.logo-container span::before {
+  content: "|";
+  margin-right: 0.75rem;
+  color: var(--white);
+  font-weight: 300;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.submit-request-btn {
+  background: var(--light-dark);
+  color: var(--white);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid var(--white);
+  border-radius: 6px;
+  padding: 0.7rem 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.sign-in-btn {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  padding: 0.7rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
