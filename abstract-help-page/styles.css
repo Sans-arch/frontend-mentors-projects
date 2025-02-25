@@ -144,17 +144,45 @@ main input:focus {
 }
 
 .features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem 8rem;
+  padding: 8rem;
 }
 
 .feature {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
-.feature a {
+.feature img {
+  width: 100px;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  height: 100%;
+}
+
+.feature-content p {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.feature-content a {
   color: var(--blue);
   text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.feature-content a::after {
+  content: "→";
+  margin-left: 0.5rem;
 }
 
 footer {
